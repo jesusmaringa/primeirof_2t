@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -6,33 +6,23 @@ h1 {
   text-align: center;
 }
 .caixa1 {
-   position: absolute;
-   background: blue;
+   position: relative;
+   background: rgb(161, 230, 218);
    width: 200px;
    height: 200px;
    color: #FFFFFF;
-   right: 500px;
-   top: 200px;
+   left: 50%;
 }
-.caixa2 {
-   position: absolute;
-   background: yellow;
-   width: 200px;
-   height: 200px;
-   color: #000000;
-   right: 705px;
-   top: 200px;
-}
-
 .menuPrincipal {
-  position: absolute;
+  position: fixed;
+  background: #9319FA;
   width: 100%;
   height: 45px;
-  background: rgb(32, 85, 69);
-  top: 0;
+  top: 0pt;
   left: 0;
+  z-index: 900;
 }
-nav ul {
+nav ul {  
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,58 +33,79 @@ li {
 }
 li a {
   display: block;
-  color: rgb(255, 255, 255);
-  padding: 14px 16px;
+  color:rgb(231, 231, 176);
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
 }
-li a:hover {
-  color: yellow;
-  background: violet;
+li a:hover{
+  background:#4BA8FA;
+  color: black;
+} 
+.imgEstudo {
+    position: absolute;
+    width: 90%;
+    height: 120px;
+    background: #ade0e2;
+    top: 45px;
+    left: 0;
+    margin: 20px;
+    border-color: rgb(235, 240, 235);
+    border-width: 20px;
+    border-style: solid;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-#image {
-   width: 30%;
+#aguia {
+   width: 20%;
 }
-.boxImage {
+#rodape {
+   position: relative;
+   bottom: 0;
+   border-radius: 25px;
+   width: 50%;
+   height: 30px;
+   background: #FAA825;
+   color:#030303;
    display: flex;
    justify-content: center;
-   position: absolute;
-   width: 100%;
-   height: 200px;
-   background: rgb(119, 156, 190);
-   top: 50px;
-   left: 0;
-   margin: 20px;
-   border-color: blue;
-   border-width: 20px;
-   border-style: solid;
-   padding: 20px;
+   font-size: 26px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.capaRodape {
+  position: relative;
+  width: 100%;
+  display: flex;
+   justify-content: center;
 }
 .conteudo {
   position: absolute;
   top: 45px;
-  width: 100%;
+  width: 95%;
+  padding: 20px;
 }
-#rodape {
+.logoGastao {
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 999;
+   width: 120px;
+   height: 100px;
+}
+.conteudoAnual{
+   width: 100%;
+}
+.formacao {
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.video {
   position: relative;
-  width: 100%;
-  height: 35px;
   display: flex;
   justify-content: center;
-}
-#copy {
-  width: 90%;
-  background: black;
-  border-radius: 30px;
-  color: yellow;
-  display: flex;
-  justify-content: center;
-}
-.logoGastao{
-  position: absolute;
-  width: 120px;
-  height: 100px;
-  top: 0;
-  right: 0;
-  z-index: 999;
 }
